@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Journal</title>
+    <style>
+        body { background-color: #121212; color: #e0e0e0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 10px; }
+        .header { display: flex; justify-content: space-between; padding: 10px; background: #1a1a1a; border-radius: 8px; margin-bottom: 15px; }
+        table { width: 100%; border-collapse: collapse; background: #1a1a1a; border-radius: 8px; overflow: hidden; font-size: 13px; }
+        th { background: #252525; color: #888; text-transform: uppercase; padding: 12px 8px; text-align: left; }
+        td { padding: 12px 8px; border-bottom: 1px solid #333; }
+        .pnl-pos { color: #00ff88; font-weight: bold; }
+        .tp-hit { background: rgba(0, 255, 136, 0.1); color: #00ff88; padding: 3px 6px; border-radius: 4px; font-size: 11px; }
+        .footer-stats { margin-top: 20px; text-align: center; }
+        .stat-card { background: #1e1e1e; padding: 15px; border-radius: 10px; border: 1px solid #333; display: inline-block; width: 45%; margin: 2%; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <span>Spot Journal</span>
+        <span>January 2026</span>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>COIN</th>
+                <th>TYPE</th>
+                <th>RESULT</th>
+                <th>PNL%</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>LTC</td>
+                <td>Swing</td>
+                <td>Closed</td>
+                <td class="pnl-pos">8%</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>SUI</td>
+                <td>Long Term</td>
+                <td><span class="tp-hit">TP Hit</span></td>
+                <td class="pnl-pos">31%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="footer-stats">
+        <p>NET Monthly Result <br> <span style="font-size: 24px; color: #00ff88; font-weight: bold;">+313.00%</span></p>
+        <div class="stat-card">Gross Profit<br><span style="color: #00ff88;">+313.00%</span></div>
+        <div class="stat-card">Gross Loss<br><span style="color: #ff4444;">0.00%</span></div>
+    </div>
+</body>
+</html>
